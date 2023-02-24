@@ -1,0 +1,1 @@
+cd Microsoft.PowerShell.Core\FileSystem::\\wsl$\Ubuntu\home\erfan\dev\OnlineShop; docker build -t erfan123a/onlineshop . -f deploy/Dockerfile; docker stop onlineshop_containter; docker rm onlineshop_containter;docker run -p 8000:8000 --name onlineshop_containter erfan123a/onlineshop
